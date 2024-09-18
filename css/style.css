@@ -10,14 +10,10 @@ body {
     color: #333;
     padding: 0;
     line-height: 1.6;
-    padding-top: 60px;
-    /* Ajusta o conteúdo para não ficar oculto atrás do cabeçalho fixo */
-    min-height: 100vh;
-    /* Garante que o rodapé fique no fundo mesmo que o conteúdo seja curto */
-    position: relative;
-    /* Necessário para o posicionamento fixo do rodapé */
-    margin-bottom: 40px;
-    /* Adiciona espaço para o rodapé fixo */
+    padding-top: 60px; /* Ajusta o conteúdo para não ficar oculto atrás do cabeçalho fixo */
+    min-height: 100vh; /* Garante que o rodapé fique no fundo mesmo que o conteúdo seja curto */
+    position: relative; /* Necessário para o posicionamento fixo do rodapé */
+    margin-bottom: 40px; /* Adiciona espaço para o rodapé fixo */
 }
 
 header {
@@ -31,8 +27,6 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    border-radius: 0;
-    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,19 +35,17 @@ header {
 header .logo {
     border-radius: 150px;
     position: absolute;
-    bottom: auto;
+    top: 15px; /* Ajusta a posição da logo */
     left: 20px;
     max-width: 70px;
 }
 
 header h1 {
-    margin: 10px 0;
-    /* Espaço acima e abaixo do título */
+    margin: 10px 0; /* Espaço acima e abaixo do título */
 }
 
 nav {
-    margin-top: 10px;
-    /* Espaço entre título e menu */
+    margin-top: 10px; /* Espaço entre título e menu */
 }
 
 nav a {
@@ -94,12 +86,10 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
-    margin: 100px auto 20px auto;
-    /* Aumenta a margem superior para separar do cabeçalho */
+    margin: 100px auto 20px auto; /* Aumenta a margem superior para separar do cabeçalho */
 }
 
 form {
-    margin: 80px auto 20px auto;
     display: flex;
     flex-direction: column;
 }
@@ -126,8 +116,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #2b0404;
-    /* Cor de fundo escurecida ao passar o mouse */
+    background-color: #2b0404; /* Cor de fundo escurecida ao passar o mouse */
 }
 
 #videos {
@@ -140,25 +129,21 @@ form button:hover {
 
 .media-item {
     width: 100%;
-    max-width: 800px;
-    /* Aumenta o tamanho máximo dos vídeos */
+    max-width: 800px; /* Aumenta o tamanho máximo dos vídeos */
     text-align: center;
 }
 
 .media-item iframe {
-    width: 100%;
-    /* Ajusta o iframe para usar 100% da largura disponível */
-    height: 450px;
-    /* Aumenta a altura do vídeo */
+    width: 100%; /* Ajusta o iframe para usar 100% da largura disponível */
+    height: 450px; /* Aumenta a altura do vídeo */
 }
 
 .media-item h3 {
-    font-size: 26px;
-    /* Tamanho maior para o título */
+    font-size: 26px; /* Tamanho maior para o título */
     font-weight: bold;
-    color: #722f37;
-    /* Cor igual ao menu */
-    margin-bottom: 15px;
+    color: #722f37; /* Garante a visibilidade do título */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+    padding: 0 10px; /* Adiciona algum preenchimento lateral */
 }
 
 footer {
@@ -166,8 +151,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #502004;
-    /* Cor igual ao menu */
+    background-color: #502004; /* Cor igual ao menu */
     color: white;
     text-align: center;
     padding: 10px;
