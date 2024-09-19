@@ -13,6 +13,7 @@ body {
     margin-bottom: 40px; /* Espaço para o rodapé */
 }
 
+/* Estilos do cabeçalho */
 header {
     background-color: #502004;
     color: white;
@@ -38,6 +39,7 @@ header .logo {
 
 header h1 {
     margin: 10px 0;
+    font-size: 2em; /* Tamanho base */
 }
 
 nav {
@@ -55,6 +57,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Seção home (página inicial) */
 #home {
     display: flex;
     flex-direction: column;
@@ -71,12 +74,12 @@ nav a:hover {
 }
 
 #home p {
-    font-size: 50px;
+    font-size: 32px;
     color: #666;
 }
 
+/* Formulário de cadastro */
 #cadastro {
-    border-radius: 50px;
     background-color: white;
     padding: 50px;
     border-radius: 5px;
@@ -87,7 +90,6 @@ nav a:hover {
 }
 
 form {
-    border-radius: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -117,6 +119,7 @@ form button:hover {
     background-color: #2b0404;
 }
 
+/* Seção de vídeos */
 #videos {
     display: flex;
     flex-direction: column;
@@ -132,7 +135,6 @@ form button:hover {
 }
 
 .media-item {
-    border-radius: 20px;
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
@@ -144,7 +146,7 @@ form button:hover {
 }
 
 .media-item h3 {
-    font-size: 26px;
+    font-size: 24px; /* Ajuste no tamanho para títulos */
     font-weight: bold;
     color: #722f37;
     margin: 20px 0;
@@ -156,18 +158,45 @@ form button:hover {
     border-radius: 5px;
 }
 
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Tamanho de título menor para telas médias */
+    }
+
+    #home p {
+        font-size: 28px; /* Tamanho de texto menor */
+    }
+
     .media-item iframe {
         height: 350px;
     }
 }
 
 @media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Tamanho de título menor para celulares */
+    }
+
+    nav a {
+        margin: 0 10px; /* Ajuste de espaçamento no menu */
+        font-size: 0.9em;
+    }
+
+    #home p {
+        font-size: 24px; /* Tamanho de texto reduzido para dispositivos menores */
+    }
+
+    .media-item h3 {
+        font-size: 20px; /* Tamanho do título reduzido para vídeos */
+    }
+
     .media-item iframe {
         height: 250px;
     }
 }
 
+/* Rodapé */
 footer {
     position: fixed;
     bottom: 0;
