@@ -159,40 +159,32 @@ form button:hover {
 }
 
 /* Ajustes para telas menores */
+
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em; /* Tamanho de título menor para telas médias */
+    h1 {
+        font-size: 1.3rem;
     }
 
-    #home p {
-        font-size: 28px; /* Tamanho de texto menor */
+    h2 {
+        font-size: 1.1rem;
     }
 
-    .media-item iframe {
-        height: 350px;
+    h3 {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em; /* Tamanho de título menor para celulares */
+    h1 {
+        font-size: 1.1rem;
     }
 
-    nav a {
-        margin: 0 10px; /* Ajuste de espaçamento no menu */
-        font-size: 0.9em;
+    h2 {
+        font-size: 1rem;
     }
 
-    #home p {
-        font-size: 24px; /* Tamanho de texto reduzido para dispositivos menores */
-    }
-
-    .media-item h3 {
-        font-size: 20px; /* Tamanho do título reduzido para vídeos */
-    }
-
-    .media-item iframe {
-        height: 250px;
+    h3 {
+        font-size: 0.9rem;
     }
 }
 
